@@ -1,2 +1,2 @@
 # Naval-Wars
-Naval wars. Three.js, socket.io, node.js game.
+![alt text](https://i.imgur.com/pIbYS1d.png)
