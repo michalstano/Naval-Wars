@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Naval Wars</title>
+
+    <script src="Ui.js"> </script>
+    <script src="Game.js"></script>
+    <script src="Music.js"></script>
+    <script src="Siatka.js"></script>
+    <script src="Statki.js"></script>
+    <script src="Net.js"></script>
+    <script src="TEST.js"></script>
+    <script src="libs/jquery-1.11.3.js"></script>
+    <script src="libs/three.js"></script>
+    <script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+    <script src="http://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="libs/three.min.js"></script>
+    <script src="Main.js"></script>
+    <script src="libs/OBJLoader.js"></script>
+    <script src="jpg/fire/THREE.Fire-master/FireShader.js"></script>
+    <script src="jpg/fire/THREE.Fire-master/Fire.js"></script>
+    <script src="libs/TrackballControls.js"></script>
+    <script src="libs/water-material.js"></script>
+    <script src="libs/Detector.js"></script>
+    <link href="css/interface.css" rel="stylesheet" />
+    <script>
+        var ui;
+        var introwater;
+        var Audio;
+        var net;
+        var client;
+        window.addEventListener("load", function () {
+            client = io();
+            ui = new Ui();
+            introwater = new onLoad();
+            music = new Music();
+            net = new Net();
+        })
+    </script>
+</head>
+<body>
+    <div id="main">
+    </div>
+</body>
+</html>
